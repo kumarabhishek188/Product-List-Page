@@ -4,7 +4,8 @@ A Next.js SSR-powered, responsive Product Listing Page matching the provided Fig
 
 ## 🚀 Demo
 
-🔗 Live demo: [Vercel Link](product-list-page-liard.vercel.app)
+🔗 Live demo: [Vercel Link](product-list-page-liard.vercel.app
+)
 
 ## 💻 Getting Started
 
