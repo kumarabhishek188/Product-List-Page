@@ -1,0 +1,95 @@
+/* styles/PLP.module.css */
+
+/* 1) Centered header */
+.header {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+/* 2) Controls row, centered max-width */
+.controlsRow {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 3) Two-column layout */
+.layout {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+.filters {
+  width: 250px;
+}
+
+/* Grid of products */
+.productGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 1.5rem;
+}
+
+/* Responsive: collapse to one column on mobile */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .filters {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Add this at the bottom of styles/PLP.module.css */
+
+.filterSection {
+  margin-bottom: 1.5rem;    /* space between each filter block */
+}
+
+.filterTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.filterSelect {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.controlsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd; /* Thin line above */
+  border-bottom: 1px solid #ddd; /* Thin line below */
+}
+
+.controlsRow div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between `<` and "Hide filter" */
+  font-size: 1rem;
+  color: #333;
+}
+
+.controlsRow .hideFilter {
+  text-decoration: underline; /* Always visible underline */
+  cursor: pointer;
+}
+
+.controlsRow select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}

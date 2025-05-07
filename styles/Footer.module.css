@@ -1,0 +1,145 @@
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Top Footer: Newsletter, Contact, Currency */
+.topFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter h3,
+.contact h3 {
+  margin-bottom: 0.5rem;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.subscribeForm input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribeForm button {
+  padding: 0.75rem 1.5rem;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.contact {
+  grid-column: 3 / 4; /* Moves Contact Us to the right */
+  margin-bottom: 1rem; /* Adds spacing above Follow Us */
+}
+
+.contact p,
+.contact small {
+  margin: 0.25rem 0;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 2rem 0;
+}
+
+/* Bottom Footer: Links, Social Media, Payments */
+.bottomFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column h4 {
+  margin-bottom: 1rem;
+}
+
+.column a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  grid-column: 3 / 4; /* Ensures Follow Us remains aligned under Contact */
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.payments {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.payments img {
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Copyright */
+.copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topFooter {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomFooter {
+    grid-template-columns: 1fr;
+  }
+
+  .column {
+    align-items: center;
+  }
+
+  .newsletter,
+  .contact {
+    text-align: center;
+  }
+
+  .contact {
+    grid-column: auto; /* Resets grid placement for smaller screens */
+  }
+
+  .social {
+    grid-column: auto; /* Resets grid placement for smaller screens */
+  }
+}
